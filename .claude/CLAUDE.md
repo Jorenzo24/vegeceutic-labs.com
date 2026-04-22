@@ -60,6 +60,21 @@
 - Commits en français, style impératif : "Ajoute section hero", "Corrige lien footer"
 - Ne pas commiter : `.DS_Store`, `.env`, secrets, node_modules, backups — le `.gitignore` s'en charge
 
+## Cache-busting
+
+Le `.htaccess` met `css/*` et `js/*` en cache 1 mois. Pour forcer le navigateur à récupérer la nouvelle version après une modif :
+
+- **À chaque modification** de `css/style.css` ou `js/main.js`, **bumper le query string** `?v=...` dans `index.html` (et toute autre page qui les référence).
+- Format recommandé : `?v=AAAAMMJJx` où `x` est une lettre qu'on incrémente si plusieurs modifs le même jour (`20260422a` → `20260422b` → `20260422c`).
+
+Exemple :
+```html
+<link rel="stylesheet" href="css/style.css?v=20260422a">
+<script src="js/main.js?v=20260422a"></script>
+```
+
+C'est **obligatoire** : sans ça, les visiteurs récurrents voient pendant un mois une version de CSS obsolète après un déploiement.
+
 ## Workflow de déploiement
 
 1. Travailler sur une branche `feature/xxx`
