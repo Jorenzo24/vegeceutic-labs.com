@@ -4,48 +4,420 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#F7F5F0">
 
-    <title>Vegeceutic Labs</title>
-    <meta name="description" content="Vegeceutic Labs — description à personnaliser.">
+    <title>Vege'ceutic Labs — Laboratoire parapharmaceutique · Marque blanche & formulation sur-mesure</title>
+    <meta name="description" content="Laboratoire parapharmaceutique B2B spécialisé en gélules, sirops et ampoules. Marque blanche, formulation sur-mesure, flexibilité sur petites, moyennes et grandes séries.">
 
     <link rel="canonical" href="https://vegeceutic-labs.com/">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="fr_FR">
-    <meta property="og:site_name" content="Vegeceutic Labs">
-    <meta property="og:title" content="Vegeceutic Labs">
-    <meta property="og:description" content="Vegeceutic Labs — description à personnaliser.">
+    <meta property="og:site_name" content="Vege'ceutic Labs">
+    <meta property="og:title" content="Vege'ceutic Labs — Laboratoire parapharmaceutique B2B">
+    <meta property="og:description" content="Marque blanche & formulation sur-mesure — gélules, sirops, ampoules. Petites, moyennes et grandes séries.">
     <meta property="og:url" content="https://vegeceutic-labs.com/">
     <meta property="og:image" content="https://vegeceutic-labs.com/assets/og-image.jpg">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Vegeceutic Labs">
-    <meta name="twitter:description" content="Vegeceutic Labs — description à personnaliser.">
+    <meta name="twitter:title" content="Vege'ceutic Labs — Laboratoire parapharmaceutique B2B">
+    <meta name="twitter:description" content="Marque blanche & formulation sur-mesure — gélules, sirops, ampoules.">
     <meta name="twitter:image" content="https://vegeceutic-labs.com/assets/og-image.jpg">
 
     <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Vege'ceutic Labs",
+        "url": "https://vegeceutic-labs.com",
+        "email": "contact@vegeceutic-labs.com",
+        "description": "Laboratoire parapharmaceutique B2B — marque blanche et formulation sur-mesure de compléments alimentaires (gélules, sirops, ampoules).",
+        "logo": "https://vegeceutic-labs.com/assets/og-image.jpg",
+        "areaServed": "FR",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "contact@vegeceutic-labs.com",
+            "contactType": "sales",
+            "availableLanguage": ["fr", "en"]
+        }
+    }
+    </script>
 </head>
 <body>
 
-    <header>
-        <h1>Vegeceutic Labs</h1>
+    <!-- ===================== HEADER ===================== -->
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a href="/" class="brand" aria-label="Vege'ceutic Labs — accueil">
+                <svg class="brand__mark" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M6 34 C6 18 18 6 34 6 C34 22 22 34 6 34 Z"/>
+                    <path d="M6 34 L30 10" stroke-width="1.25" opacity="0.55"/>
+                </svg>
+                <span class="brand__name"><em>Vege</em>'ceutic Labs</span>
+            </a>
+
+            <nav class="site-nav" aria-label="Navigation principale">
+                <a href="#savoir-faire">Savoir-faire</a>
+                <a href="#thematiques">Thématiques</a>
+                <a href="#formats">Formats</a>
+                <a href="#process">Process</a>
+            </nav>
+
+            <a href="mailto:contact@vegeceutic-labs.com" class="header-contact">
+                <svg class="header-contact__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2"/>
+                    <path d="m3 7 9 6 9-6"/>
+                </svg>
+                <span class="header-contact__label">contact@vegeceutic-labs.com</span>
+            </a>
+        </div>
     </header>
 
     <main>
-        <section>
-            <p>Bienvenue sur Vegeceutic Labs.</p>
+
+        <!-- ===================== HERO ===================== -->
+        <section class="hero">
+            <div class="hero__bg" aria-hidden="true"></div>
+            <div class="wrap">
+                <div class="hero__inner">
+                    <h1>Laboratoire parapharmaceutique<br><em>marque blanche &amp; formulation sur-mesure</em></h1>
+                    <p>De la formulation à la mise en flacon, nous développons et produisons vos compléments alimentaires en petites, moyennes et grandes séries. Gélules, sirops, ampoules&nbsp;— sous votre marque.</p>
+                    <div class="hero__cta">
+                        <a href="mailto:contact@vegeceutic-labs.com" class="btn btn--primary">Parler de votre projet</a>
+                        <a href="#savoir-faire" class="btn btn--ghost">Découvrir notre savoir-faire</a>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <!-- ===================== SAVOIR-FAIRE (2 voies) ===================== -->
+        <section class="voies" id="savoir-faire">
+            <div class="wrap">
+                <span class="eyebrow">Notre savoir-faire</span>
+                <h2 class="section-title">Deux voies pour développer votre gamme</h2>
+                <p class="section-lede">Que vous cherchiez une solution clé en main ou un produit exclusif, nos équipes R&amp;D et production vous accompagnent de l'idée initiale jusqu'au conditionnement final.</p>
+
+                <div class="voies__grid">
+                    <article class="voie">
+                        <div class="voie__media">
+                            <img src="/assets/marque-blanche.jpg" alt="Alignement de flacons pharmaceutiques neutres sans étiquette" loading="lazy" width="900" height="600">
+                        </div>
+                        <div class="voie__body">
+                            <span class="voie__tag">Marque blanche</span>
+                            <h3 class="voie__title">Des formules prêtes à commercialiser</h3>
+                            <p class="voie__desc">Un catalogue de compléments alimentaires déjà formulés, testés et conformes. Choisissez vos produits, personnalisez le conditionnement et lancez votre marque rapidement.</p>
+                            <ul class="voie__bullets">
+                                <li>Formules éprouvées, documentation réglementaire fournie</li>
+                                <li>Personnalisation du packaging et du dosage</li>
+                                <li>Mise sur le marché accélérée</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="voie">
+                        <div class="voie__media">
+                            <img src="/assets/formulation.jpg" alt="Main gantée tenant une pipette au-dessus d'une poudre végétale en laboratoire" loading="lazy" width="900" height="600">
+                        </div>
+                        <div class="voie__body">
+                            <span class="voie__tag">Formulation sur-mesure</span>
+                            <h3 class="voie__title">Votre cahier des charges, notre R&amp;D</h3>
+                            <p class="voie__desc">Un produit exclusif, conçu avec vous. Nos formulateurs développent votre complément alimentaire depuis le concept jusqu'au lot pilote, en respectant vos contraintes actifs, galénique et budget.</p>
+                            <ul class="voie__bullets">
+                                <li>Étude de faisabilité et sourcing d'actifs</li>
+                                <li>Prototypage et tests organoleptiques</li>
+                                <li>Dossier technique complet pour mise sur le marché</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== THÉMATIQUES ===================== -->
+        <section class="themes" id="thematiques">
+            <div class="wrap">
+                <span class="eyebrow">Thématiques</span>
+                <h2 class="section-title">Les grands axes de bien-être que nous adressons</h2>
+                <p class="section-lede">Nos formulations couvrent les besoins essentiels du marché de la parapharmacie et du complément alimentaire, avec des actifs végétaux, vitamines, minéraux et probiotiques.</p>
+
+                <div class="themes__grid">
+                    <div class="theme">
+                        <svg class="theme__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                        <h3 class="theme__label">Vitalité &amp; Énergie</h3>
+                        <p class="theme__desc">Tonus, anti-fatigue, performance physique et mentale.</p>
+                    </div>
+
+                    <div class="theme">
+                        <svg class="theme__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                        </svg>
+                        <h3 class="theme__label">Sommeil &amp; Détente</h3>
+                        <p class="theme__desc">Endormissement, qualité du sommeil, relaxation.</p>
+                    </div>
+
+                    <div class="theme">
+                        <svg class="theme__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        <h3 class="theme__label">Immunité</h3>
+                        <p class="theme__desc">Défenses naturelles, soutien des saisons froides.</p>
+                    </div>
+
+                    <div class="theme">
+                        <svg class="theme__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M12 2s-6 7-6 12a6 6 0 0 0 12 0c0-5-6-12-6-12z"/>
+                        </svg>
+                        <h3 class="theme__label">Digestion &amp; Confort</h3>
+                        <p class="theme__desc">Transit, équilibre intestinal, probiotiques, ballonnements.</p>
+                    </div>
+
+                    <div class="theme">
+                        <svg class="theme__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M12 2 14 9l7 2-7 2-2 7-2-7-7-2 7-2 2-7z"/>
+                        </svg>
+                        <h3 class="theme__label">Beauté</h3>
+                        <p class="theme__desc">Peau, cheveux, ongles — collagène, kératine, antioxydants.</p>
+                    </div>
+
+                    <div class="theme">
+                        <svg class="theme__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M12 3v18M4 8h16M6 8l1 10h10l1-10"/>
+                        </svg>
+                        <h3 class="theme__label">Minceur &amp; Équilibre</h3>
+                        <p class="theme__desc">Brûleurs, coupe-faim, régulation du poids, détox.</p>
+                    </div>
+
+                    <div class="theme">
+                        <svg class="theme__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M4 12a8 8 0 0 1 16 0M20 12a8 8 0 0 1-16 0M8 8l-4 4 4 4M16 16l4-4-4-4"/>
+                        </svg>
+                        <h3 class="theme__label">Articulations &amp; Mobilité</h3>
+                        <p class="theme__desc">Souplesse, confort articulaire, collagène, glucosamine.</p>
+                    </div>
+
+                    <div class="theme">
+                        <svg class="theme__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="9" r="6"/>
+                            <path d="M12 15v7M9 19h6"/>
+                        </svg>
+                        <h3 class="theme__label">Femme</h3>
+                        <p class="theme__desc">Cycles, ménopause, grossesse, équilibre hormonal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== FORMATS ===================== -->
+        <section id="formats">
+            <div class="wrap">
+                <span class="eyebrow">Formats galéniques</span>
+                <h2 class="section-title">Tous les formats adaptés à votre positionnement</h2>
+                <p class="section-lede">Du comprimé premium au sirop familial, nous maîtrisons les galéniques les plus demandées en parapharmacie, avec des lignes dédiées à chaque format.</p>
+
+                <div class="formats__media">
+                    <img src="/assets/formats.jpg" alt="Composition de trois formats galéniques : gélules, ampoule et sirop" loading="lazy" width="1600" height="900">
+                </div>
+
+                <div class="formats__grid">
+                    <div class="format">
+                        <svg class="format__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="4" y="8" width="16" height="8" rx="4" transform="rotate(-20 12 12)"/>
+                            <path d="M8.5 7 15.5 17" opacity="0.5"/>
+                        </svg>
+                        <h3 class="format__label">Gélules</h3>
+                        <p class="format__desc">Notre spécialité. Gélatine, végétale (HPMC), tailles 00 à 3, dosages variables.</p>
+                    </div>
+
+                    <div class="format">
+                        <svg class="format__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M9 2h6v4l2 3v11a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V9l2-3V2z"/>
+                            <path d="M7 13h10" opacity="0.5"/>
+                        </svg>
+                        <h3 class="format__label">Sirops</h3>
+                        <p class="format__desc">Flacons 100 à 500 ml, arômes naturels, édulcorants contrôlés, avec doseur.</p>
+                    </div>
+
+                    <div class="format">
+                        <svg class="format__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M10 2h4v5l2 3v10a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V10l2-3V2z"/>
+                            <path d="M10 4h4" opacity="0.6"/>
+                        </svg>
+                        <h3 class="format__label">Ampoules buvables</h3>
+                        <p class="format__desc">Unidoses 10 à 25 ml, étuis de 10 à 30 ampoules, actifs concentrés.</p>
+                    </div>
+
+                    <div class="format">
+                        <svg class="format__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M4 6h16l-2 14H6L4 6z"/>
+                            <path d="M9 10v6M15 10v6" opacity="0.5"/>
+                        </svg>
+                        <h3 class="format__label">Autres formats</h3>
+                        <p class="format__desc">Comprimés, sachets de poudre, sticks : nous consulter selon votre projet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== QUANTITÉS ===================== -->
+        <section class="quantites">
+            <div class="wrap">
+                <span class="eyebrow">Flexibilité</span>
+                <h2 class="section-title">De la série de lancement à la production continue</h2>
+                <p class="section-lede">Notre outil de production s'adapte à votre volume. Testez un nouveau concept sur une petite série, puis montez en volume à mesure que votre marque se développe.</p>
+
+                <div class="quantites__grid">
+                    <div class="quantite">
+                        <div class="quantite__num">500+</div>
+                        <h3 class="quantite__label">Petites séries</h3>
+                        <p class="quantite__desc">Idéal pour tester un marché, lancer une marque ou éditer une série limitée sans engagement massif.</p>
+                    </div>
+                    <div class="quantite">
+                        <div class="quantite__num">10k+</div>
+                        <h3 class="quantite__label">Moyennes séries</h3>
+                        <p class="quantite__desc">Votre produit a trouvé son public : on passe en production récurrente, avec optimisation des coûts.</p>
+                    </div>
+                    <div class="quantite">
+                        <div class="quantite__num">100k+</div>
+                        <h3 class="quantite__label">Grandes séries</h3>
+                        <p class="quantite__desc">Référencement GMS, e-commerce, export : capacité industrielle, régularité, délais maîtrisés.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== PROCESS ===================== -->
+        <section id="process">
+            <div class="wrap">
+                <span class="eyebrow">Notre process</span>
+                <h2 class="section-title">De l'idée au produit livré</h2>
+                <p class="section-lede">Un interlocuteur dédié, un process clair et jalonné. Vous savez à chaque étape où en est votre projet.</p>
+
+                <div class="process__media">
+                    <img src="/assets/atelier.jpg" alt="Atelier de production pharmaceutique moderne et épuré" loading="lazy" width="2100" height="900">
+                </div>
+
+                <ol class="process__steps">
+                    <li class="step">
+                        <h3 class="step__title">Brief &amp; cahier des charges</h3>
+                        <p class="step__desc">Échange initial, définition des objectifs, actifs, galénique, volumes et budget.</p>
+                    </li>
+                    <li class="step">
+                        <h3 class="step__title">Formulation &amp; R&amp;D</h3>
+                        <p class="step__desc">Conception de la formule, sourcing des matières premières, étude de faisabilité.</p>
+                    </li>
+                    <li class="step">
+                        <h3 class="step__title">Tests &amp; validation</h3>
+                        <p class="step__desc">Prototypes, tests organoleptiques et analytiques, ajustements, validation client.</p>
+                    </li>
+                    <li class="step">
+                        <h3 class="step__title">Production</h3>
+                        <p class="step__desc">Lancement du lot, contrôles qualité en ligne, traçabilité matières et process.</p>
+                    </li>
+                    <li class="step">
+                        <h3 class="step__title">Conditionnement &amp; livraison</h3>
+                        <p class="step__desc">Mise en flacon, étiquetage, étui, palettisation et expédition sur votre entrepôt.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ===================== ENGAGEMENTS ===================== -->
+        <section class="engagements">
+            <div class="wrap">
+                <span class="eyebrow">Nos engagements</span>
+                <h2 class="section-title">Un partenaire industriel de confiance</h2>
+                <p class="section-lede">Rigueur, transparence et confidentialité. Nous travaillons avec des marques exigeantes qui ne peuvent pas se permettre d'approximations.</p>
+
+                <div class="engagements__grid">
+                    <div class="engagement">
+                        <svg class="engagement__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="m8 12 3 3 5-6"/>
+                        </svg>
+                        <h3 class="engagement__title">Qualité &amp; traçabilité</h3>
+                        <p class="engagement__desc">Contrôles à chaque étape, traçabilité matière première par matière première.</p>
+                    </div>
+                    <div class="engagement">
+                        <svg class="engagement__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <path d="M14 2v6h6M9 13h6M9 17h4"/>
+                        </svg>
+                        <h3 class="engagement__title">Conformité réglementaire</h3>
+                        <p class="engagement__desc">Dossiers techniques conformes, déclarations DGCCRF, suivi des évolutions.</p>
+                    </div>
+                    <div class="engagement">
+                        <svg class="engagement__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        </svg>
+                        <h3 class="engagement__title">Accompagnement dédié</h3>
+                        <p class="engagement__desc">Un chef de projet unique, réactif, disponible à chaque étape de votre développement.</p>
+                    </div>
+                    <div class="engagement">
+                        <svg class="engagement__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="4" y="10" width="16" height="11" rx="2"/>
+                            <path d="M8 10V7a4 4 0 0 1 8 0v3"/>
+                        </svg>
+                        <h3 class="engagement__title">Confidentialité</h3>
+                        <p class="engagement__desc">NDA systématique. Vos formules, vos volumes et votre stratégie restent chez vous.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CONTACT ===================== -->
+        <section class="contact" id="contact">
+            <div class="narrow">
+                <span class="eyebrow">Contact</span>
+                <h2 class="contact__title">Parlons de votre projet</h2>
+                <p class="contact__desc">Présentez-nous votre idée, votre cahier des charges ou votre volume cible&nbsp;: nous revenons vers vous avec une première estimation.</p>
+                <a href="mailto:contact@vegeceutic-labs.com" class="contact__email" aria-label="Nous écrire à contact@vegeceutic-labs.com">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="3" y="5" width="18" height="14" rx="2"/>
+                        <path d="m3 7 9 6 9-6"/>
+                    </svg>
+                    contact@vegeceutic-labs.com
+                </a>
+                <p class="contact__note">Réponse sous 24 à 48 heures ouvrées.</p>
+            </div>
+        </section>
+
     </main>
 
-    <footer>
-        <p>&copy; 2026 Vegeceutic Labs. Tous droits réservés.</p>
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer">
+        <div class="wrap">
+            <div class="site-footer__inner">
+                <div class="site-footer__brand">
+                    <svg class="brand__mark" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M6 34 C6 18 18 6 34 6 C34 22 22 34 6 34 Z"/>
+                        <path d="M6 34 L30 10" stroke-width="1.25" opacity="0.55"/>
+                    </svg>
+                    <span>Vege'ceutic Labs</span>
+                </div>
+                <div class="site-footer__links">
+                    <a href="mailto:contact@vegeceutic-labs.com">contact@vegeceutic-labs.com</a>
+                    <a href="#savoir-faire">Savoir-faire</a>
+                    <a href="#thematiques">Thématiques</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="site-footer__meta">
+                &copy; <span id="year">2026</span> Vege'ceutic Labs. Tous droits réservés.
+            </div>
+        </div>
     </footer>
 
     <script src="/js/main.js"></script>
