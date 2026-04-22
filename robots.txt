@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /catalogue-produits.html
 
 Sitemap: https://vegeceutic-labs.com/sitemap.xml

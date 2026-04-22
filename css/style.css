@@ -690,7 +690,12 @@ section { padding: clamp(3.5rem, 9vw, 6.5rem) 0; }
     margin-bottom: 1rem;
     overflow-wrap: break-word;
 }
-.product-card__info h4 {
+/* Bloc "Bénéfices clés" : en pleine largeur de la carte, sous le header (image + desc) */
+.product-card__benefits-block {
+    padding: 0.25rem 1.5rem 0.5rem;
+    min-width: 0;
+}
+.product-card__benefits-block h4 {
     font-size: 0.9375rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
@@ -699,6 +704,14 @@ section { padding: clamp(3.5rem, 9vw, 6.5rem) 0; }
 .product-card__benefits {
     padding: 0;
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0 1.5rem;
+}
+@media (min-width: 48rem) {
+    /* Sur grand écran : les bénéfices peuvent s'afficher en 2 colonnes
+       puisque le bloc prend toute la largeur */
+    .product-card__benefits { grid-template-columns: 1fr 1fr; }
 }
 .product-card__benefits li {
     font-size: 0.875rem;
@@ -720,9 +733,8 @@ section { padding: clamp(3.5rem, 9vw, 6.5rem) 0; }
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.25rem;
-    padding: 1rem 1.5rem 1.5rem;
-    border-top: 1px solid var(--border);
-    margin-top: 0.5rem;
+    padding: 0.75rem 1.5rem 1.5rem;
+    margin-top: 0;
     min-width: 0;
 }
 @media (min-width: 48rem) {
@@ -826,7 +838,8 @@ body.catalogue-page .catalog-category {
     }
     /* Dans la carte rétrécie, on repasse les détails en colonne simple pour
        éviter la compression horizontale du long texte de Composition. */
-    body.catalogue-page .product-card__details {
+    body.catalogue-page .product-card__details,
+    body.catalogue-page .product-card__benefits {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
