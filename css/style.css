@@ -713,14 +713,16 @@ section { padding: clamp(3.5rem, 9vw, 6.5rem) 0; }
 .product-card__details {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1.25rem;
     padding: 1rem 1.5rem 1.5rem;
     border-top: 1px solid var(--border);
     margin-top: 0.5rem;
     min-width: 0;
 }
 @media (min-width: 48rem) {
-    .product-card__details { grid-template-columns: 1fr 1fr; gap: 2rem; }
+    /* Ratio 1:1.75 — la colonne droite (Composition, texte long) prend plus de place,
+       la gauche (Conditionnement/Mode/Origine, texte court) se resserre → moins de vide */
+    .product-card__details { grid-template-columns: 1fr 1.75fr; gap: 1.75rem; }
 }
 .product-card__details dl {
     min-width: 0;
@@ -786,6 +788,42 @@ section { padding: clamp(3.5rem, 9vw, 6.5rem) 0; }
     border-radius: 0.25rem;
     text-transform: uppercase;
     z-index: 1;
+}
+
+/* ---------- Page catalogue : fond blanc + grille 2 colonnes sur grand écran ---------- */
+
+body.catalogue-page { background: #ffffff; }
+
+body.catalogue-page .catalog-hero {
+    background: linear-gradient(180deg, var(--sage-light) 0%, #ffffff 100%);
+}
+body.catalogue-page .catalog-toc,
+body.catalogue-page .catalog-category {
+    background: #ffffff;
+}
+
+/* ≥ 80rem (1280px) : les fiches se disposent en 2 colonnes "masonry" grâce à
+   CSS columns — les cartes de hauteurs différentes s'enchaînent sans trou. */
+@media (min-width: 80rem) {
+    body.catalogue-page .catalog-category {
+        column-count: 2;
+        column-gap: 1.5rem;
+    }
+    body.catalogue-page .catalog-category__title {
+        column-span: all;
+    }
+    body.catalogue-page .product-card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        display: inline-block;
+        width: 100%;
+    }
+    /* Dans la carte rétrécie, on repasse les détails en colonne simple pour
+       éviter la compression horizontale du long texte de Composition. */
+    body.catalogue-page .product-card__details {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 }
 
 /* ---------- Back to top ---------- */
