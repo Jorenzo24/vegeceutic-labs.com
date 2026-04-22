@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Éditeurs
+*.swp
+*.swo
+.vscode/settings.json
+.idea/
+
+# Env / secrets
+*.env
+.env.*
+
+# Logs
+*.log
+
+# Dépendances
+node_modules/
+
+# Backups
+*.bak
+*.old
+*.orig
+*.save
